@@ -6,6 +6,7 @@ const {
 	USER,
 	PASSWORD,
 	HOST,
+	PORT,
 	DIALECT
 } = require('../configs/database.config')
 
@@ -13,6 +14,7 @@ const {
 // connect db
 const database = new Sequelize(DB, USER, PASSWORD, {
 	host: HOST,
+	port: PORT,
 	dialect: DIALECT
 })
 
